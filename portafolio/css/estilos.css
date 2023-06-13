@@ -1,0 +1,186 @@
+
+    #contenedor{
+        width: 970px;
+        min-height: 800px;
+        background-color: rgb(228, 228, 228);
+        display: inline-block;
+        margin: 1px;
+    }
+
+    h1{
+        font-family: "Comic Sans MS";
+        margin-left: 20px;         
+        margin-top: 0px;
+    }      
+    
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 140%;
+    }
+
+    #header{
+    width: 970px;
+    max-height: 60px;
+    }
+
+    #div1{
+        display: inline-block;
+        width: 540px;
+    
+    }
+
+    #div2{
+        display: inline-block;
+        width: 410px;
+    }
+
+    #contenedor2{
+        background-image: radial-gradient(rgb(161, 109, 161), black);
+        min-height: 650px;
+    }
+
+    #divimg{
+        display: inline-block;
+        margin: 10px;
+        vertical-align: top;
+    }
+
+    #img1{
+        margin-top: 20px;
+        width: 400px;
+        height: 293px;
+        border: 5px solid rgba(255, 255, 255, 0.705);
+    }
+
+    #about{
+        display: inline-block;
+        max-width: 510px;
+        height: 300px;
+        font-size: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 32px;
+        background-color: rgba(255, 255, 255, 0.849);
+    }
+
+    .ptext{
+        padding: 10px;
+        margin-top: -15px;
+        font-size: 70%;
+    }
+
+    .link1{
+        margin-top: -13px;
+        padding: 5px;
+        font-size: 90%;
+        display: block;
+    }
+    
+    #h3a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        padding: 10px;
+        margin-top: -1px;
+        color: white;
+        background-image: linear-gradient(silver,rgb(126, 126, 126),silver);
+    }
+
+    .h3s{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 130%;
+        padding: 10px;
+        margin-top: -1px;
+        color: white;
+        background-image: linear-gradient(silver,rgb(126, 126, 126),silver);
+    }
+
+    .cuadrado{
+        width: 295px;
+        height: 550px;
+        background-color: #E7DDE6;
+        display: inline-block;
+        margin: 27px;
+        margin-left: 10px;
+        vertical-align: top;       
+    }
+
+    #c1,#c2{
+        margin-right: 10px;
+    }
+
+    .imgs{
+        margin-top: -20px;
+        width: 295px;
+        height: 150px;
+    }
+
+    .pm{
+        margin-top: -3px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 90%;
+        padding: 5px;
+    }
+
+    #ht1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 115%;
+        padding: 5px;
+        margin-top: 51px;
+        color: white;
+        background-image: linear-gradient(silver,rgb(126, 126, 126),silver);
+    }
+
+    #ht2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 115%;
+        padding: 5px;
+        margin-top: 34px;
+        color: white;
+        background-image: linear-gradient(silver,rgb(126, 126, 126),silver);
+    }
+
+    #ht3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 115%;
+        padding: 5px;
+        margin-top: -14px;
+        color: white;
+        background-image: linear-gradient(silver,rgb(126, 126, 126),silver);
+    }
+
+    .imgst{
+        width: 290px;
+        height: 100px;
+        margin-top: -10px;
+    }
+
+    button{
+        margin-top: 1%;
+        margin-left: 30%;
+        padding: 5px;
+        color: white;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.404) ;
+        border: 1px solid rgb(0, 56, 0);
+        border-radius: 10px;
+        background-color: green;
+    }
+
+    #pf{
+        font-family: arial;
+        text-align: center;
+        margin-top: 5px;
+    }
+    #divf{
+        margin-left: 28%;
+        margin-top: -8px;
+    }
+    .link2, .link3, .link4, .link5 {
+        vertical-align: top;
+        display: inline-block;
+        margin: 3px;
+        font-size: 19px;
+    
+    }
+
+   

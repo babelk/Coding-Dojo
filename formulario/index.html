@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mi Formulario de Registro</h1>
+    <form>
+        <label for="nombre">Nombre:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--La etiqueta &nbsp; genera espacios-->
+        <input type="text" id="nombre" name="nombre"><br><br>
+    
+        <label for="apellido">Apellido:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="apellido" name="apellido"><br><br>
+    
+        <label for="email">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="contraseña">Contraseña:</label>&nbsp;&nbsp;
+        <input type="password" id="contraseña" name="contraseña"> <br><br>
+
+        <label for="confirmar">Confirmar:</label>&nbsp;&nbsp;&nbsp;
+        <input type="password" id="confirmar" name="confirmar"><br><br>
+
+        <label for="cumpleaños">Cumpleaños:</label>
+        <input type="date" id="cumpleaños" name="cumpleaños"><br><br>
+
+        <label for="hombre">Hombre</label>
+        <input type="radio" id="hombre" name="genero" value="hombre">
+    
+        <label for="mujer">Mujer</label>
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        
+        <label for="otro">Otro</label>
+        <input type="radio" id="otro" name="genero" value="otro">
+    
+        <p>Una breve descripción de ti:</p>
+            <TExtarea name="descripcion"></TExtarea><br><br>
+
+        <label for="LeanguajeFavorito">Leanguaje Favorito</label>   
+        <select id="LeanguajeFavorito">
+            <option value="JavaScript">JavaScript</option>
+            <option value="CSS">CSS</option>
+            <option value="Python">Python</option>
+        </select> <br><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+#div1{
+    max-width: 1024px;
+}
+#pheader, h1, #width{
+    border: 1px solid #FFFF9A;
+    
+}
+
+h1{
+    background-color: rgb(170, 170, 170);
+    font-size: 45px;
+    font-family: arial;
+    padding: 2%;
+}
+
+#pheader{
+    background-color: rgb(197, 197, 197);
+    font-size: 26px;
+    font-family: arial;
+    padding: 2%;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+#width{
+    background-color: #FFFF9A;
+    max-width: 1024px;
+}
+.ptext{
+    font-size: 26px;
+    font-family: arial;
+    padding-left: 2%;
+    
+}
+
+
+@media only screen and (max-width: 480px){
+    #phone::after{
+        content:"less than or equal to 480px";
+        font-weight: bold;
+    }
+    #desktop, #tablet {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px){
+    #tablet::after{   
+        content: "between 481px and 1023px";
+        font-weight: bold;
+    }
+    #desktop, #phone {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #desktop::after{   
+        content: "Greater than or equal to 1024px";
+        font-weight: bold;
+    }
+    #phone, #tablet {
+        display: none;
+    }
+}

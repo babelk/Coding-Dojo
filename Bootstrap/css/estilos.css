@@ -1,0 +1,16 @@
+#form1{
+    margin-left: 20px;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+.texto{
+    width: 70%;
+    display: inline-block;
+    margin: 20px;
+}
+.dojo{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}

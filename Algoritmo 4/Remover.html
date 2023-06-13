@@ -1,0 +1,8 @@
+<script>
+    function eliminarRango(arr,inicio,fin){
+        arr.splice(inicio, fin - inicio + 1);
+        console.log(arr);
+        return "Array Nuevo";
+    }
+    console.log(eliminarRango([20, 30, 40, 50, 60, 70],1,3));
+</script>

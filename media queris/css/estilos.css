@@ -1,0 +1,19 @@
+.botones{
+    width: 200px;
+    height: 150px;
+}
+@media only screen and (max-width: 480px){
+    .botones{
+        background-color: yellow;
+    }
+}
+@media only screen and (min-width: 481px){
+    .botones{
+        background-color: blue;
+    }
+}
+@media only screen and (min-width : 1024px) {
+    .botones{
+        background-color: red;
+    }
+}

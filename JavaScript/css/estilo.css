@@ -1,0 +1,100 @@
+#div_uno{
+    width: 970px;
+    height: 596px;
+    background-color: rgb(18, 53, 91);
+    display: inline-block;
+    margin: 1px;
+    color: rgb(191, 215, 234);
+    
+}
+
+#div_dos{
+    border-radius: 15px;
+    background-color: rgb(215, 38, 56);
+    margin: 10px;
+    display: block;
+    height: 76px;
+    
+
+}
+
+.h1{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#div_tres{
+    
+    position: absolute;
+    border-radius: 15px;
+    width: 720px;
+    height: 420px;
+    background-color: rgb(12, 24, 33);
+    display: inline-block;
+    margin: 10px;
+}
+#div_ocho{
+    
+    position: absolute;
+    border-radius: 15px;
+    background-color: rgb(92, 102, 114);
+    height: 50px;
+    width: 950px;
+    display: block;
+    margin-top: 190px;
+    margin-left: 10px;
+    display: block;
+}
+
+#pi{
+    margin-left: 15px;
+
+}
+
+#div_cuatro{
+    font-size: 14px;
+    border-radius: 15px;
+    background-color: rgb(8, 126, 139);
+    vertical-align: top;
+    display: inline-block;
+    height: 230px;
+    width: 210px;
+    margin: 10px;
+    
+}
+
+.ul2{
+    margin-left: -20px;
+}
+
+h4{
+margin-left: 20px;
+margin-top: 20px;
+margin-bottom: -10px;
+
+}
+
+.h2{
+    margin-top: 25px;
+    margin-bottom: -8px;
+    margin-left: 10px;
+}
+
+.info{
+    margin-left: -17px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    font-size: 70%;
+    text-align: justify;
+    
+}
+
+.info1{
+    margin-right: 10px;
+    margin-left: 10px;
+    
+    font-size: 70%;
+    text-align: justify;
+    
+}
