@@ -1,0 +1,7 @@
+Reutilice un esquema creado en clases.
+
+
+SELECT * FROM normalizacion.estudiantes;
+insert estudiantes values (null, 1, 'Jorge Astorga', '2023-06-27', '2023-06-27');
+update estudiantes set dojo_id = 2, actualizado_en = '2023-06-27 10:18:30' where id=11;
+delete from estudiantes where id=11;
