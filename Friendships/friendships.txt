@@ -1,0 +1,58 @@
+escribe una consulta SQL que devuelva una lista de usuarios junto con los nombres de sus amigos.
+
+SELECT users.first_name, users.last_name, users2.first_name AS friend_first_name, users2.last_name AS friend_last_name
+FROM users 
+JOIN friendships ON friendships.user_id = users.id
+JOIN users as users2 ON users2.id = friendships.friend_id;
+
+Ejercicio Adicional
+
+Devuelva a todos los usuarios que son amigos de Kermit, asegúrese de que sus nombres se muestren en los resultados.
+
+SELECT users.first_name, users.last_name, users2.first_name AS friend_first_name, users2.last_name AS friend_last_name
+FROM users 
+JOIN friendships ON friendships.user_id = users.id
+JOIN users as users2 ON users2.id = friendships.friend_id
+WHERE friendships.friend_id = 4;
+
+Devuelve el recuento de todas las amistades.
+
+SELECT COUNT(id) AS recuento_de_amistades
+FROM friendships;
+
+Descubre quién tiene más amigos y devuelve el recuento de sus amigos.
+
+Select users.first_name, users.last_name, COUNT(friendships.friend_id) AS amigos
+FROM users
+JOIN friendships ON friendships.user_id = users.id
+GROUP BY users.id
+ORDER BY amigos DESC
+LIMIT 1;
+
+Crea un nuevo usuario y hazlos amigos de Eli Byers, Kermit The Frog y Marky Mark.
+
+INSERT users VALUES (null, 'Manuel', 'Jeldes', '2023-07-02 14:14:00', null);
+INSERT friendships VALUES (null, 6, 2, '2023-07-02 14:14:00', null);
+INSERT friendships VALUES (null, 6, 4, '2023-07-02 14:14:00', null);
+INSERT friendships VALUES (null, 6, 5, '2023-07-02 14:14:00', null);
+
+Devuelve a los amigos de Eli en orden alfabético.
+
+SELECT users2.first_name, users2.last_name, CONCAT(users.first_name,' ', users.last_name) AS amigo
+FROM users 
+JOIN friendships ON friendships.user_id = users.id
+JOIN users as users2 ON users2.id = friendships.friend_id
+WHERE users.id = 2
+ORDER BY first_name DESC;
+
+Eliminar a Marky Mark de los amigos de Eli.
+
+DELETE FROM friendships 
+WHERE friendships.user_id = 2 AND friendships.friend_id = 5;
+
+Devuelve todas las amistades, mostrando solo el nombre y apellido de ambos amigos.
+
+SELECT users.first_name, users.last_name, CONCAT(users2.first_name,' ', users2.last_name) AS amigo
+FROM users
+JOIN friendships ON friendships.user_id = users.id
+JOIN users AS users2 ON users2.id = friendships.friend_id;
