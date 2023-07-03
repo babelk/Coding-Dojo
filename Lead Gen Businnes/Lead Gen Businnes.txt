@@ -18,6 +18,16 @@ WHERE sites.client_id = 10;
 
 4. ¿Qué consulta ejecutaría para obtener el número total de sitios creados por mes por año para el cliente con una identificación de 1? ¿Qué pasa con el cliente = 20?
 
+SELECT sites.client_id, COUNT(sites.site_id), MONTHNAME(created_datetime) AS mes, YEAR(created_datetime) AS ano
+FROM sites
+WHERE sites.client_id = 1
+GROUP BY sites.client_id, sites.site_id;
+
+SELECT sites.client_id, COUNT(sites.site_id), MONTHNAME(created_datetime) AS mes, YEAR(created_datetime) AS ano
+FROM sites
+WHERE sites.client_id = 20
+GROUP BY sites.client_id, sites.site_id;
+
 5. ¿Qué consulta ejecutaría para obtener el número total de clientes potenciales generados para cada uno de los sitios entre el 1 de enero de 2011 y el 15 de febrero de 2011?
 
 SELECT sites.domain_name, COUNT(leads.site_id) AS potenciales
@@ -77,3 +87,5 @@ SELECT CONCAT(clients.first_name, ' ', clients.last_name) AS nombre_cliente, GRO
 FROM sites
 JOIN clients ON clients.client_id = sites.client_id
 GROUP BY clients.client_id;
+
+¿con que me quedo? con nunca dejar de conocer y reflexionar sobre mi 
