@@ -1,0 +1,39 @@
+	#p1 {
+		display: inline-block;
+		width: 240px;
+	}
+	
+	#p2 {
+		display: inline-block;
+		width: 100px;
+	}
+	#div1{
+		display: block;
+	}
+	
+	#a1 {
+		display: block;
+		width: 200px;
+	}
+	#p4{
+		display: inline-block;
+	    margin-left: 10px;
+	    margin-top: -33px;
+	    vertical-align: top;
+	}
+	#p5{
+		display: inline-block;
+	    margin-left: 140px;
+	    margin-top: -33px;
+	    vertical-align: top;
+	}
+	#b1{
+		display: inline-block;
+	    margin-left:5px;
+	    margin-top: -33px;
+	    vertical-align: top;
+	}
+h1{
+	margin-left: 40%;
+	margin-top: 5%;
+}
