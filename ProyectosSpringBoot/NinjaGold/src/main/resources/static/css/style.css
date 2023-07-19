@@ -1,0 +1,129 @@
+#container{
+	margin-left: 3%;
+	margin-top: 2%;
+	width: 1681px;
+}
+h1{
+	font-family: sans-serif;
+	font-weight: 100;
+	font-size: 40px;
+	width: 200px;
+	display: inline-block;
+}
+#counter{
+	display: inline-block;
+	width: 130px;
+	height: 40px;
+	border: 3px solid black;
+	margin-left: -5px;
+	margin-top: 0px;
+	font-family: sans-serif;
+	font-size: 40px;
+}
+#form1{
+	display: inline-block;
+}
+#reset{
+	display: inline-block;
+	background-color: transparent;
+	border: 3px solid black;
+	box-shadow:4px 3px 1px 1px black;
+	width: 100px;
+	height: 45px;
+	vertical-align: top;
+	margin-top: -25px;
+	margin-left: 25px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 30px;
+}
+#header{
+	display: block;
+}
+h4{
+	display: inline-block;
+	font-family: sans-serif;
+	font-size: 30px;
+	font-weight: lighter;
+	margin-left: 30px;
+	margin-top: -10px;
+	margin-bottom: 55px;
+	text-align: center;
+}
+.apuesta2{
+	margin-left: 40px;
+}
+.apuesta3{
+	margin-left: 45px;
+}
+.apuesta4{
+	width: 200px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+}
+.apuesta5{
+	margin-left: 45px;
+}
+h2{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 40px;
+	font-weight: 100;
+	text-align: center;
+}
+.box{
+	width: 300px;
+	height: 250px;
+	border: 3px solid black;
+	display: inline-block;
+	margin-right: 2%;
+	vertical-align: top;
+}
+.box5{
+	margin-right: 0px;
+}
+#find{
+	background-color: transparent;
+	border: 3px solid black;
+	box-shadow:5px 6px 1px 1px black;
+	width: 150px;
+	height: 40px;
+	margin-left: 27%;
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: bolder;
+}
+h3{
+	font-family: sans-serif;
+	font-size: 30px;
+}
+#valoresgold{
+	width: 	auto;
+	height: 250px;
+	border: 3px solid black;
+    overflow-y: auto; /* Permite desplazarse verticalmente si el contenido excede la altura */
+    padding: 10px; /* Agrega un relleno opcional para mejorar el aspecto */
+}
+#ganargold{
+	font-family: sans-serif;
+	font-size: 25px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+
+}
+.ganar {
+	font-family: sans-serif;
+	font-size: 25px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+
+   	color: green;
+}
+        
+.perder {
+	font-family: sans-serif;
+	font-size: 25px;
+	margin-bottom: 5px;
+	margin-top: 0px;
+   	color: red;
+}
