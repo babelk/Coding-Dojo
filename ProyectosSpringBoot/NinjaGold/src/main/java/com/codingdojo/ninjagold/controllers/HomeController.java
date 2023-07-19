@@ -47,17 +47,12 @@ public class HomeController {
 	public String random1(HttpSession session) {
 		Random random = new Random();
 		int randomNumber = random.nextInt(11) + 10;
-		session.setAttribute("gold", randomNumber);
-
-		String mensaje = "You entered a Form and earned " + randomNumber + " gold (" + session.getAttribute("fecha")
-				+ ")";
-		String[] mensajeConEstilo = { mensaje, "ganar" };
+		String mensaje = "You entered a Form and earned " + randomNumber + " gold (" + session.getAttribute("fecha")+ ")";
+		String[] mensajeConEstilo = {mensaje, "ganar"};
 		mensajes.add(mensajeConEstilo);
-
 		Integer count = (Integer) session.getAttribute("count");
 		count += randomNumber;
 		session.setAttribute("count", count);
-
 		return "redirect:/";
 	}
 
@@ -65,15 +60,11 @@ public class HomeController {
 	public String random2(HttpSession session) {
 		Random random = new Random();
 		int randomNumber = random.nextInt(6) + 5;
-		session.setAttribute("gold", randomNumber);
-
 		Integer count = (Integer) session.getAttribute("count");
 		count += randomNumber;
 		session.setAttribute("count", count);
-
-		String mensaje = "You entered a Cave and earned " + randomNumber + " gold (" + session.getAttribute("fecha")
-				+ ")";
-		String[] mensajeConEstilo = { mensaje, "ganar" };
+		String mensaje = "You entered a Cave and earned " + randomNumber + " gold (" + session.getAttribute("fecha")+ ")";
+		String[] mensajeConEstilo = {mensaje, "ganar"};
 		mensajes.add(mensajeConEstilo);
 
 		return "redirect:/";
@@ -84,16 +75,12 @@ public class HomeController {
 		Random random = new Random();
 		int randomNumber = random.nextInt(4) + 2;
 		session.setAttribute("gold", randomNumber);
-
 		Integer count = (Integer) session.getAttribute("count");
 		count += randomNumber;
 		session.setAttribute("count", count);
-
-		String mensaje = "You entered a House and earned " + randomNumber + " gold (" + session.getAttribute("fecha")
-				+ ")";
+		String mensaje = "You entered a House and earned " + randomNumber + " gold (" + session.getAttribute("fecha")+ ")";
 		String[] mensajeConEstilo = { mensaje, "ganar" };
 		mensajes.add(mensajeConEstilo);
-
 		return "redirect:/";
 	}
 
@@ -111,11 +98,8 @@ public class HomeController {
 			String[] mensajeConEstilo = { mensaje, "ganar" };
 			mensajes.add(mensajeConEstilo);
 		} else {
-			randomNumber *= -1;
-			session.setAttribute("gold", randomNumber);
-			count += randomNumber;
-			String mensaje = "You entered a Casino and lost " + Math.abs(randomNumber) + " gold...Ouch ("
-					+ session.getAttribute("fecha") + ")";
+			count -= randomNumber;
+			String mensaje = "You entered a Casino and lost " + Math.abs(randomNumber) + " gold...Ouch ("+ session.getAttribute("fecha") + ")";
 			String[] mensajeConEstilo = { mensaje, "perder" };
 			mensajes.add(mensajeConEstilo);
 		}
@@ -131,15 +115,11 @@ public class HomeController {
 	@PostMapping("random5")
 	public String random5(HttpSession session) {
 		Random random = new Random();
-		int randomNumber = (random.nextInt(46) + 5) * -1;
-		session.setAttribute("gold", randomNumber);
-
+		int randomNumber = (random.nextInt(46) + 5);
 		Integer count = (Integer) session.getAttribute("count");
-		count += randomNumber;
+		count -= randomNumber;
 		session.setAttribute("count", count);
-
-		String mensaje = "You entered a Spa and lost " + Math.abs(randomNumber) + " gold (" + session.getAttribute("fecha")
-				+ ")";
+		String mensaje = "You entered a Spa and lost " + Math.abs(randomNumber) + " gold (" + session.getAttribute("fecha")+ ")";
 		String[] mensajeConEstilo = { mensaje, "perder" };
 		mensajes.add(mensajeConEstilo);
 
