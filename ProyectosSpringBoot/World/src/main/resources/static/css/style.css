@@ -1,0 +1,20 @@
+.container{
+	margin: 5%;
+	font-family: sans-serif;
+}
+h1{
+	font-size: 60px;
+	font-weight: lighter;
+}
+p{
+	font-size: 25px;
+	font-weight: lighter;
+	
+}
+.input1{
+	width: 120px;
+	border: 3px solid black;
+	height: 30px;
+	margin-left: 20px;
+	font-size: 17px;
+}
